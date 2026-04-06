@@ -2,60 +2,19 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>metro video hub</title>
-<style>
-body {
-    margin:0;
-    background:#111;
-    font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color:#fff;
-}
-h1 {
-    text-align:center;
-    padding:20px 0 10px 0;
-    font-size:24px;
-}
-#tiles {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
-    padding:20px;
-}
-.tile {
-    width:140px;
-    height:100px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:18px;
-    font-weight:bold;
-    text-align:center;
-    cursor:pointer;
-    border-radius:8px;
-    transition:transform 0.1s;
-}
-.tile:hover {
-    transform:scale(1.05);
-}
-.tile1 { background:#0078D7; } /* blue */
-.tile2 { background:#E81123; } /* red */
-.tile3 { background:#FFB900; } /* yellow */
-</style>
+<title>video hub simple</title>
 </head>
 <body>
 
-<h1>metro vids 🎬</h1>
+<h2>Video Hub 🎬</h2>
 
-<div id="tiles">
-    <div class="tile tile1" onclick="play('video1.mp4')">Video 1</div>
-    <div class="tile tile2" onclick="play('video2.mp4')">Video 2</div>
-    <div class="tile tile3" onclick="play('video3.mp4')">Video 3</div>
-</div>
+<button onclick="play('video1.mp4')">Video 1</button>
+<button onclick="play('video2.mp4')">Video 2</button>
+<button onclick="play('video3.mp4')">Video 3</button>
 
 <script>
 function play(src) {
-    // direct open in built-in player
+    // open video directly in WP7 player
     window.location = src;
 }
 </script>
